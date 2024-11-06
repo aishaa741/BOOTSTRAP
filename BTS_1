@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid p-5 my-5 bg-dark text-white">
+      <h1>Risposte in un Container Fluid</h1>
+      <p>Bootstrap è una raccolta di strumenti per creare siti web in modo più facile e veloce. Fornisce stili e componenti già pronti (come pulsanti, menu, griglie di layout) che si adattano automaticamente a diversi schermi e dispositivi, così non devi creare tutto da zero..</p>
+      una pagina web con bootstrap devi importare:</br>
+        <code>&ltlink rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"&gt</code></p>
+      <h5>3. Cos'è un CDN? Che vantaggi comporta rispetto a scaricare bootstrap sul tuo sito?</h5>
+      <p>Un CDN (Content Delivery Network) è una rete di server globali che rende i contenuti web, come Bootstrap, più veloci da scaricare.</br>
+        Vantaggi del CDN rispetto al download locale:</br>
+        · Maggiore Velocità: Scarica i file dal server più vicino all'utente.</br>
+        · Meno Carico sul Server: Riduce il lavoro del server del sito.</br>
+        · Cache Riutilizzabile: Molti utenti hanno già i file in cache.</br>
+        · Affidabilità: Offre stabilità e disponibilità elevate.</br>
+      </p>
+      <h5>4. A cosa serve questo attributo del tag meta?
+        <code>content="width=device-width, initial-scale=1</code></h5>
+      <p>Serve a configurare il viewport di una pagina web per garantire un layout ottimale su dispositivi mobili.</br>
+        · <code>width=device-width</code>: Imposta la larghezza del viewport uguale alla larghezza dello schermo del dispositivo, rendendo il sito responsive.</br>
+        · <code>initial-scale=1</code>: Imposta lo zoom iniziale al 100%, evitando zoom automatici che potrebbero distorcere il layout.</br>
+      </p>
+      <h5>5. Che differenza c'è tra Container e Container Fluid?</h5>
+      <p>In Bootstrap, la differenza tra container e container-fluid è:</br>
+        · <code>container</code>: Crea un contenitore con larghezza fissa che varia in base alle dimensioni dello schermo, centrato con margini laterali automatici.</br>
+        · <code>container-fluid</code>: Crea un contenitore a larghezza completa, che si estende su tutta la larghezza della finestra, senza margini laterali.</br>
+      </p>
+    </div>
+  </body>
+</html>
