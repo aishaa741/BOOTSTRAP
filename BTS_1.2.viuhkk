@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container p-5 my-5 bg-dark text-white">
+      <h1>Risposte in un Container</h1>
+      <h5>1. A cosa serve bootstrap?</h5>
+      <p>Bootstrap è una raccolta di strumenti per creare siti web in modo più facile e veloce. Fornisce stili e componenti già pronti (come pulsanti, menu, griglie di layout) che si adattano automaticamente a diversi schermi e dispositivi, così non devi creare tutto da zero..</p>
+      <h5>2. Cosa devi importare per creare una pagina web con bootstrap?</h5>
+      <p>Per creare una pagina web con bootstrap devi importare:</br>
+        <code>&ltlink rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"&gt</code></p>
+      <h5>3. Cos'è un CDN? Che vantaggi comporta rispetto a scaricare bootstrap sul tuo sito?</h5>
+      <p>Un CDN, o Content Delivery Network, è una rete di server distribuiti in diverse località che servono contenuti web, come file CSS e JavaScript, ai visitatori del sito.
+      Vantaggi di usare un CDN per Bootstrap rispetto a scaricare i file sul tuo sito:
+      Velocità: I file vengono serviti dal server più vicino all'utente, riducendo il tempo di caricamento.
+      Affidabilità: I CDN hanno molte copie dei file, quindi se uno è fuori servizio, gli altri possono continuare a funzionare.
+      Scalabilità: In caso di picchi di traffico, i CDN possono gestire più richieste senza sovraccaricare il tuo server.
+      Aggiornamenti automatici: Se usi un CDN, puoi ottenere automaticamente le ultime versioni di Bootstrap senza dover aggiornare manualmente i file sul tuo server.
+      </p>
+      <h5>4. A cosa serve questo attributo del tag meta?
+        <code>content="width=device-width, initial-scale=1</code></h5>
+      <p>L'attributo `` nel tag `` serve per fare in modo che la pagina web sia visibile correttamente su tutti i dispositivi, come smartphone e tablet. - **`width=device-width`** imposta la larghezza della pagina per adattarsi alla larghezza dello schermo del dispositivo. - **`initial-scale=1`** assicura che la pagina non sia né ingrandita né rimpicciolita all’apertura. Questo attributo rende il sito più "responsive", cioè facilmente leggibile su dispositivi di diverse dimensioni.</br>
+      </p>
+      <h5>5. Che differenza c'è tra Container e Container Fluid?</h5>
+      <p>In Bootstrap, la differenza tra container e container-fluid è:</br>
+        · <code>container</code>: Crea un contenitore con larghezza fissa che varia in base alle dimensioni dello schermo, centrato con margini laterali automatici.</br>
+        · <code>container-fluid</code>: Crea un contenitore a larghezza completa, che si estende su tutta la larghezza della finestra, senza margini laterali.</br>
+      </p>
+    </div>
+  </body>
