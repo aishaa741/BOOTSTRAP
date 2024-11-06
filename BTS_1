@@ -5,18 +5,60 @@
   <body>
     <div class="container-fluid p-5 my-5 bg-dark text-white">
       <h1>Risposte in un Container Fluid</h1>
-      <p> 1) Bootstrap è una raccolta di strumenti per creare siti web in modo più facile e veloce. Fornisce stili e componenti già pronti (come pulsanti, menu, griglie di layout) che si adattano automaticamente a diversi schermi e dispositivi, così non devi creare tutto da zero..</p>
-      <p> 2) una pagina web con bootstrap devi importare:</br>
-        <code>&ltlink rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"&gt</code></p>
-      <p> 3) Un CDN (Content Delivery Network) è una rete di server distribuiti in varie parti del mondo che permette di caricare velocemente i file, come Bootstrap, da un server vicino all’utente. Usare un CDN per Bootstrap rende il caricamento del sito più rapido, riducendo il tempo di attesa per chi visita la pagina e risparmiando spazio sul server del tuo sito.<p>
-      </p>
-        <code>content="width=device-width, initial-scale=1</code></h5>
-      <p>L'attributo `meta` nei tag HTML serve a dare informazioni sulla pagina ai browser e ai motori di ricerca. Ad esempio, può indicare la descrizione della pagina, il tipo di carattere usato, o rendere il sito più adatto ai dispositivi mobili. Queste informazioni migliorano la visualizzazione e il posizionamento della pagina online..</br>
-      </p>
-      <p>In Bootstrap, la differenza tra container e container-fluid è:</br>
-        · <code>container</code>: Crea un contenitore con larghezza fissa che varia in base alle dimensioni dello schermo, centrato con margini laterali automatici.</br>
-        · <code>container-fluid</code>: Crea un contenitore a larghezza completa, che si estende su tutta la larghezza della finestra, senza margini laterali.</br>
-      </p>
+        <p>
+            1) Bootstrap è un insieme di strumenti per creare siti web più facilmente. Ti aiuta a fare pagine che si
+            adattano a diversi dispositivi (come computer e smartphone) e offre elementi già pronti, come bottoni e
+            menu, per risparmiare tempo. È utile per avere un aspetto professionale e coerente senza dover partire da
+            zero
+
+        </p>
+        <p>
+            2) &lt;link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"&gt;
+
+        <p>
+        <p>
+            3) Un CDN, o Content Delivery Network, è una rete di server distribuiti in diverse località che servono
+            contenuti web, come file CSS e JavaScript, ai visitatori del sito.
+
+            Vantaggi di usare un CDN per Bootstrap rispetto a scaricare i file sul tuo sito:
+
+            Velocità: I file vengono serviti dal server più vicino all'utente, riducendo il tempo di caricamento.
+
+            Affidabilità: I CDN hanno molte copie dei file, quindi se uno è fuori servizio, gli altri possono continuare
+            a funzionare.
+
+            Scalabilità: In caso di picchi di traffico, i CDN possono gestire più richieste senza sovraccaricare il tuo
+            server.
+
+            Aggiornamenti automatici: Se usi un CDN, puoi ottenere automaticamente le ultime versioni di Bootstrap senza
+            dover aggiornare manualmente i file sul tuo server.
+        <p>
+        <p>
+            4) L'attributo content="width=device-width, initial-scale=1" nel tag
+            <meta> serve a rendere il tuo sito web responsivo.
+
+            width=device-width: imposta la larghezza della pagina uguale alla larghezza dello schermo del dispositivo.
+            Così, il sito si adatta bene a smartphone, tablet e computer.
+
+            initial-scale=1: specifica il livello di zoom iniziale quando la pagina viene caricata. Un valore di 1.0
+            significa che il contenuto appare a grandezza normale.
+        <p>
+        <p>
+            5) Container: è un contenitore con larghezza fissa che si adatta a diverse dimensioni di schermo, ma ha dei
+            margini su entrambi i lati. È utile per layout più centrati.
+        <p>
+
+        <p>
+            Container Fluid: occupa il 100% della larghezza disponibile dello schermo, quindi si estende fino ai bordi,
+            senza margini. È ideale per layout che devono sfruttare tutto lo spazio disponibile.
+        <p>
+        <p>
+
+        <p>
     </div>
-  </body>
+    
+    </div>
+</body>
+
 </html>
