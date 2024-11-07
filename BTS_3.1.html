@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabella Bootstrap Responsive</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Definire i colori delle righe alternate */
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #333333; /* nero */
+            color: #ffffff;
+        }
+        .table-striped tbody tr:nth-of-type(even) {
+            background-color: #888888; /* grigio */
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container my-5">
+    <!-- Layout grid per centrare la tabella -->
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="text-center">Tabella 4x4 Responsive</h2>
+            
+            <!-- Tabella responsive con bootstrap -->
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead class="thead-danger">
+                        <tr class="bg-danger text-white">
+                            <th scope="col">Intestazione 1</th>
+                            <th scope="col">Intestazione 2</th>
+                            <th scope="col">Intestazione 3</th>
+                            <th scope="col">Intestazione 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Riga 1, Colonna 1</td>
+                            <td>Riga 1, Colonna 2</td>
+                            <td>Riga 1, Colonna 3</td>
+                            <td>Riga 1, Colonna 4</td>
+                        </tr>
+                        <tr>
+                            <td>Riga 2, Colonna 1</td>
+                            <td>Riga 2, Colonna 2</td>
+                            <td>Riga 2, Colonna 3</td>
+                            <td>Riga 2, Colonna 4</td>
+                        </tr>
+                        <tr>
+                            <td>Riga 3, Colonna 1</td>
+                            <td>Riga 3, Colonna 2</td>
+                            <td>Riga 3, Colonna 3</td>
+                            <td>Riga 3, Colonna 4</td>
+                        </tr>
+                        <tr>
+                            <td>Riga 4, Colonna 1</td>
+                            <td>Riga 4, Colonna 2</td>
+                            <td>Riga 4, Colonna 3</td>
+                            <td>Riga 4, Colonna 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script di Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
