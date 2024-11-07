@@ -1,58 +1,26 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crisi in Palestina</title>
-    <!-- Link a Bootstrap e al file CSS personalizzato -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="custom.css"> <!-- File CSS personalizzato -->
-</head>
-<body>
-    <!-- Navbar principale -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Crisi in Palestina</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Storia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Attualità</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contatti</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+:root {
+    --bs-primary: #003366; /* Blu scuro */
+    --bs-success: #228B22; /* Verde foresta */
+    --bs-info: #00CED1; /* Azzurro */
+    --bs-warning: #FFA500; /* Arancione */
+    --bs-danger: #8B0000; /* Rosso scuro */
+    --bs-secondary: #696969; /* Grigio scuro */
+    --bs-dark: #000000; /* Nero */
+    --bs-light: #f8f9fa; /* Bianco */
+}
 
-    <!-- Contenuto principale -->
-    <div class="container mt-5">
-        <h1 class="text-primary">La Crisi in Palestina</h1>
-        <p class="lead">Un approfondimento sulla storia e sugli sviluppi recenti della crisi in Palestina, un tema di grande importanza storica e attualità.</p>
-        
-        <!-- Sezione Storia -->
-        <section class="my-5">
-            <h2 class="text-secondary">Storia della Crisi</h2>
-            <p>La crisi in Palestina ha origini storiche complesse che risalgono agli inizi del XX secolo, con l'intensificazione dei conflitti tra comunità ebraiche e arabe in Palestina, un territorio sotto il mandato britannico. Dopo la creazione dello Stato di Israele nel 1948, la tensione è cresciuta, portando a diverse guerre e alla continua disputa per il controllo territoriale.</p>
-            <p>Oggi, la crisi continua a evolversi, con molteplici tentativi di mediazione internazionale, ma con frequenti episodi di violenza e tensioni tra le parti coinvolte.</p>
-        </section>
-        
-        <!-- Sezione Attualità -->
-        <section class="my-5">
-            <h2 class="text-info">Situazione Attuale</h2>
-            <p>Oggi, la situazione in Palestina è caratterizzata da un mix di speranza e conflitto. Le tensioni rimangono alte, con frequenti scontri e una popolazione che vive in condizioni difficili. I tentativi di pace hanno incontrato diversi ostacoli, e le risoluzioni non hanno ancora prodotto un cambiamento significativo per la stabilità della regione.</p>
-            <p>La comunità internazionale osserva attentamente, cercando di facilitare il dialogo tra le parti per evitare ulteriori escalation.</p>
-        </section>
-    </div>
+/* Personalizzazioni aggiuntive */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bs-light);
+    color: var(--bs-dark);
+}
 
-    <!-- Footer -->
-    <footer class="bg-dark text-light text-center py-3">
-        <p>&copy; 2024 Crisi in Palestina - Tutti i diritti riservati</p>
-    </footer>
+h1, h2 {
+    color: var(--bs-primary);
+}
 
-    <!-- Script di Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+footer {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+}
