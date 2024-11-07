@@ -1,69 +1,91 @@
-Ecco come strutturare l'esercizio utilizzando HTML e CSS. 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Text Color Classes</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
 
-1. **Lista di descrizione dei colori con `<dl>`**:
-   ```html
-   <dl>
-      <dt>.text-muted</dt>
-      <dd>Testo con un colore attenuato.</dd>
-      <dt>.text-primary</dt>
-      <dd>Colore principale per evidenziare informazioni rilevanti.</dd>
-      <dt>.text-success</dt>
-      <dd>Indica successo o completamento positivo.</dd>
-      <dt>.text-info</dt>
-      <dd>Colore informativo.</dd>
-      <dt>.text-warning</dt>
-      <dd>Colore di avviso per richiamare l'attenzione.</dd>
-      <dt>.text-danger</dt>
-      <dd>Indica errore o situazione critica.</dd>
-      <dt>.text-secondary</dt>
-      <dd>Colore secondario per informazioni meno importanti.</dd>
-      <dt>.text-white</dt>
-      <dd>Testo bianco, generalmente su sfondi scuri.</dd>
-      <dt>.text-dark</dt>
-      <dd>Testo scuro, generalmente su sfondi chiari.</dd>
-      <dt>.text-body</dt>
-      <dd>Colore predefinito del testo per il corpo.</dd>
-      <dt>.text-light</dt>
-      <dd>Testo chiaro, su sfondi scuri o colorati.</dd>
-   </dl>
-   ```
+    <!-- Grid layout with Bootstrap classes -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <h2>Descrizione delle Classi di Colori di Testo</h2>
+            <dl>
+                <dt class="text-muted">.text-muted</dt>
+                <dd>Colore grigio utilizzato per rendere il testo meno appariscente.</dd>
 
-2. **Lista con sfondi colorati per ogni testo**:
-   ```html
-   <dl>
-      <dt><span class="bg-muted text-white">.text-muted</span></dt>
-      <dd>Testo con un colore attenuato su sfondo attenuato.</dd>
-      <dt><span class="bg-primary text-white">.text-primary</span></dt>
-      <dd>Colore principale su sfondo principale.</dd>
-      <dt><span class="bg-success text-white">.text-success</span></dt>
-      <dd>Indica successo su sfondo di successo.</dd>
-      <dt><span class="bg-info text-white">.text-info</span></dt>
-      <dd>Colore informativo su sfondo informativo.</dd>
-      <dt><span class="bg-warning text-white">.text-warning</span></dt>
-      <dd>Colore di avviso su sfondo di avviso.</dd>
-      <dt><span class="bg-danger text-white">.text-danger</span></dt>
-      <dd>Indica errore su sfondo di errore.</dd>
-      <dt><span class="bg-secondary text-white">.text-secondary</span></dt>
-      <dd>Colore secondario su sfondo secondario.</dd>
-      <dt><span class="bg-white text-dark">.text-white</span></dt>
-      <dd>Testo bianco su sfondo bianco (modificato con testo scuro per visibilità).</dd>
-      <dt><span class="bg-dark text-white">.text-dark</span></dt>
-      <dd>Testo scuro su sfondo scuro (modificato con testo bianco per visibilità).</dd>
-      <dt><span class="bg-body text-body">.text-body</span></dt>
-      <dd>Colore predefinito del testo su sfondo predefinito.</dd>
-      <dt><span class="bg-light text-dark">.text-light</span></dt>
-      <dd>Testo chiaro su sfondo chiaro (modificato con testo scuro per visibilità).</dd>
-   </dl>
-   ```
+                <dt class="text-primary">.text-primary</dt>
+                <dd>Colore blu per evidenziare il testo come "primario".</dd>
 
-3. **Testo con opacità al 50%**:
-   ```html
-   <p style="opacity: 0.5;">Questo testo ha un'opacità del 50%.</p>
-   ```
+                <dt class="text-success">.text-success</dt>
+                <dd>Colore verde, spesso usato per indicare successo o completamento.</dd>
 
-4. **Testo bianco con opacità al 50% su sfondo warning**:
-   ```html
-   <p class="text-white bg-warning" style="opacity: 0.5;">Questo testo è bianco, con opacità al 50%, su sfondo di avviso.</p>
-   ```
+                <dt class="text-info">.text-info</dt>
+                <dd>Colore azzurro, utile per informazioni di supporto.</dd>
 
-Con questi snippet HTML e CSS, puoi creare una rappresentazione visuale delle classi di colori, insieme ad alcune varianti di sfondi e trasparenza.
+                <dt class="text-warning">.text-warning</dt>
+                <dd>Colore giallo, che indica attenzione o avvertimenti.</dd>
+
+                <dt class="text-danger">.text-danger</dt>
+                <dd>Colore rosso, solitamente usato per segnalare errori o avvisi importanti.</dd>
+
+                <dt class="text-secondary">.text-secondary</dt>
+                <dd>Colore grigio scuro per testo secondario.</dd>
+
+                <dt class="text-white bg-dark p-2">.text-white</dt>
+                <dd>Testo bianco, spesso usato su sfondi scuri.</dd>
+
+                <dt class="text-dark">.text-dark</dt>
+                <dd>Colore nero o scuro, usato per enfatizzare il testo su sfondi chiari.</dd>
+
+                <dt class="text-body">.text-body</dt>
+                <dd>Testo del colore predefinito del corpo del documento.</dd>
+
+                <dt class="text-light bg-dark p-2">.text-light</dt>
+                <dd>Colore grigio chiaro, usato spesso su sfondi scuri.</dd>
+            </dl>
+        </div>
+    </div>
+
+    <!-- Lista con sfondo colorato -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <h2>Classi di Colori di Sfondo</h2>
+            <ul>
+                <li class="bg-primary text-white p-2">.bg-primary - Sfondo blu con testo bianco</li>
+                <li class="bg-success text-white p-2">.bg-success - Sfondo verde con testo bianco</li>
+                <li class="bg-info text-white p-2">.bg-info - Sfondo azzurro con testo bianco</li>
+                <li class="bg-warning text-dark p-2">.bg-warning - Sfondo giallo con testo scuro</li>
+                <li class="bg-danger text-white p-2">.bg-danger - Sfondo rosso con testo bianco</li>
+                <li class="bg-secondary text-white p-2">.bg-secondary - Sfondo grigio scuro con testo bianco</li>
+                <li class="bg-dark text-white p-2">.bg-dark - Sfondo nero con testo bianco</li>
+                <li class="bg-light text-dark p-2">.bg-light - Sfondo grigio chiaro con testo scuro</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Testo con opacità al 50% -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <h2>Testo con Opacità al 50%</h2>
+            <p class="text-primary" style="opacity: 0.5;">Questo testo è al 50% di opacità.</p>
+        </div>
+    </div>
+
+    <!-- Testo bianco su sfondo warning con opacità al 50% -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <h2>Testo Bianco su Sfondo Warning con Opacità al 50%</h2>
+            <p class="text-white bg-warning p-2" style="opacity: 0.5;">Questo testo bianco è al 50% di opacità su sfondo giallo.</p>
+        </div>
+    </div>
+
+    <!-- Link Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
