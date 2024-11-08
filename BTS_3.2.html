@@ -1,78 +1,136 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Esercizio BTS_3.2</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Aggiungo alcuni stili personalizzati per le immagini */
-        .img-circle {
-            border-radius: 50%;
-            float: right;
-        }
-        .img-rounded {
-            border-radius: 15px;
-            float: left;
-        }
-        .thumbnail-centered {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body id="top">
+<body>
 
-    <!-- Jumbotron (Alternativa con Bootstrap 5) -->
-    <header class="p-5 bg-info text-white text-center">
-        <h1>Esplora Destinazioni Iconiche</h1>
-        <p>Scopri le meraviglie di Egitto, Brasile e Dubai!</p>
-    </header>
+<div class="container my-5">
+  <!-- Jumbotron -->
+  <div class="bg-info text-white p-5 mb-4 rounded">
+    <h1 class="display-4">Galleria Immagini</h1>
+    <p class="lead">Questa sezione mostra alcune immagini con diversi stili di presentazione usando Bootstrap.</p>
+  </div>
 
-    <div class="container mt-4">
-        <!-- Griglia per le immagini -->
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1554123168-77b63b57f0a4?ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGVneXB0fGVufDB8fHx8MTY5ODk0MjczOQ&ixlib=rb-1.2.1&w=500" alt="Egitto" class="img-fluid img-circle">
-                <p class="text-center mt-2">Immagine fluttuante a destra in un cerchio: Egitto</p>
-            </div>
-            <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1564564295391-7f24f26f568b?ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxicmF6aWx8ZW58MHx8fHwxNjk4OTQyNzM5&ixlib=rb-1.2.1&w=500" alt="Brasile" class="img-fluid thumbnail-centered">
-                <p class="text-center mt-2">Immagine centrata in un thumbnail: Brasile</p>
-            </div>
-            <div class="col-md-4">
-                <img src="https://images.unsplash.com/photo-1582483893185-40fbcdd0c877?ixid=MnwzNjUyOXwwfDF8c2VhcmNofDl8fGR1YmFpfGVufDB8fHx8MTY5ODk0MjczOQ&ixlib=rb-1.2.1&w=500" alt="Dubai" class="img-fluid img-rounded">
-                <p class="text-center mt-2">Immagine fluttuante a sinistra con bordi arrotondati: Dubai</p>
-            </div>
-        </div>
-
-        <!-- Alert con link per tornare all'inizio della pagina -->
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <strong>Esplorazione completata!</strong> 
-            <a href="#top" class="alert-link">Torna all'inizio della pagina.</a>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-
-        <!-- Bottoni -->
-        <div class="mb-3">
-            <button type="button" class="btn btn-outline-primary w-100">Button Outline - Block Level</button>
-        </div>
-
-        <!-- Gruppo di Bottoni con DropDown Menu -->
-        <div class="btn-group">
-            <button type="button" class="btn btn-primary">Azione</button>
-            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="visually-hidden">Toggle Dropdown</span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Opzione 1</a></li>
-                <li><a class="dropdown-item" href="#">Opzione 2</a></li>
-                <li><a class="dropdown-item" href="#">Opzione 3</a></li>
-            </ul>
-        </div>
+  <!-- Grid Layout per le immagini -->
+  <div class="row g-4">
+    <!-- Immagine Fluttuante a destra in un cerchio -->
+    <div class="col-md-4">
+      <img src="URL_IMMAGINE_1" class="float-end rounded-circle img-fluid" alt="Immagine Fluttuante a Destra">
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Immagine Centrata in un Thumbnail -->
+    <div class="col-md-4 text-center">
+      <img src="URL_IMMAGINE_2" class="img-thumbnail img-fluid" alt="Immagine Thumbnail Centrata">
+    </div>
+
+    <!-- Immagine Fluttuante a sinistra con bordi arrotondati -->
+    <div class="col-md-4">
+      <img src="URL_IMMAGINE_3" class="float-start rounded img-fluid" alt="Immagine Fluttuante a Sinistra">
+    </div>
+  </div>
+
+  <!-- Alert -->
+  <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+    <strong>Successo!</strong> Hai completato la visualizzazione delle immagini. 
+    <a href="#top" class="alert-link">Torna all'inizio della pagina.</a>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <!-- Bottoni -->
+  <div class="mt-4">
+    <!-- Button Outline -->
+    <button type="button" class="btn btn-outline-primary">Button Outline</button>
+
+    <!-- Block Level Button -->
+    <button type="button" class="btn btn-primary btn-lg d-block mt-3">Block Level Button</button>
+
+    <!-- DropDownMenu in un Gruppo di Bottoni -->
+    <div class="btn-group mt-3">
+      <button type="button" class="btn btn-secondary">Menu</button>
+      <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Opzione 1</a></li>
+        <li><a class="dropdown-item" href="#">Opzione 2</a></li>
+        <li><a class="dropdown-item" href="#">Opzione 3</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>`html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container my-5">
+  <!-- Jumbotron -->
+  <div class="bg-info text-white p-5 mb-4 rounded">
+    <h1 class="display-4">Galleria Immagini</h1>
+    <p class="lead">Questa sezione mostra alcune immagini con diversi stili di presentazione usando Bootstrap.</p>
+  </div>
+
+  <!-- Grid Layout per le immagini -->
+  <div class="row g-4">
+    <!-- Immagine Fluttuante a destra in un cerchio -->
+    <div class="col-md-4">
+      <img src="URL_IMMAGINE_1" class="float-end rounded-circle img-fluid" alt="Immagine Fluttuante a Destra">
+    </div>
+
+    <!-- Immagine Centrata in un Thumbnail -->
+    <div class="col-md-4 text-center">
+      <img src="URL_IMMAGINE_2" class="img-thumbnail img-fluid" alt="Immagine Thumbnail Centrata">
+    </div>
+
+    <!-- Immagine Fluttuante a sinistra con bordi arrotondati -->
+    <div class="col-md-4">
+      <img src="URL_IMMAGINE_3" class="float-start rounded img-fluid" alt="Immagine Fluttuante a Sinistra">
+    </div>
+  </div>
+
+  <!-- Alert -->
+  <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+    <strong>Successo!</strong> Hai completato la visualizzazione delle immagini. 
+    <a href="#top" class="alert-link">Torna all'inizio della pagina.</a>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <!-- Bottoni -->
+  <div class="mt-4">
+    <!-- Button Outline -->
+    <button type="button" class="btn btn-outline-primary">Button Outline</button>
+
+    <!-- Block Level Button -->
+    <button type="button" class="btn btn-primary btn-lg d-block mt-3">Block Level Button</button>
+
+    <!-- DropDownMenu in un Gruppo di Bottoni -->
+    <div class="btn-group mt-3">
+      <button type="button" class="btn btn-secondary">Menu</button>
+      <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Opzione 1</a></li>
+        <li><a class="dropdown-item" href="#">Opzione 2</a></li>
+        <li><a class="dropdown-item" href="#">Opzione 3</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
