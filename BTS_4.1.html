@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esercizio Bootstrap</title>
+    <title>Esercizio BTS_4.1 - Bootstrap</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
+        <div class="container">
+            <a class="navbar-brand" href="#">Esercizio BTS_4.1</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -31,30 +31,13 @@
         </div>
     </nav>
 
-    <div class="container my-4">
+    <!-- Container principale con layout a griglia -->
+    <div class="container my-5">
         <div class="row">
-            <!-- Colonna con Card e Collapse -->
-            <div class="col-md-6">
-                <!-- Card con Collapse -->
-                <div class="card">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <span>Notifiche Importanti</span>
-                        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseContent" aria-expanded="false" aria-controls="collapseContent">
-                            Mostra Dettagli
-                        </button>
-                    </div>
-                    <div id="collapseContent" class="collapse">
-                        <div class="card-body">
-                            Questo è il contenuto della card che può essere nascosto o mostrato usando il bottone sopra.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Colonna con List Group e Badges -->
-            <div class="col-md-6">
-                <!-- List Group con Badge -->
-                <h3>Lista Attività</h3>
+            <!-- Colonna sinistra -->
+            <div class="col-md-4">
+                <!-- List Group con Badges -->
+                <h3 class="mb-3">Lista Attività</h3>
                 <ul class="list-group">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         Compito 1
@@ -70,18 +53,60 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- Colonna centrale -->
+            <div class="col-md-4">
+                <!-- Card con Collapse -->
+                <h3 class="mb-3">Notizie Importanti</h3>
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span>Notifiche</span>
+                        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseContent" aria-expanded="false" aria-controls="collapseContent">
+                            Mostra Dettagli
+                        </button>
+                    </div>
+                    <div id="collapseContent" class="collapse">
+                        <div class="card-body">
+                            Questo è il contenuto della card che può essere nascosto o mostrato usando il bottone sopra. Qui puoi aggiungere dettagli importanti.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colonna destra -->
+            <div class="col-md-4">
+                <!-- Badges -->
+                <h3 class="mb-3">Notifiche con Badge</h3>
+                <button type="button" class="btn btn-primary mb-2">
+                    Messaggi <span class="badge bg-secondary">4</span>
+                </button>
+                <button type="button" class="btn btn-warning mb-2">
+                    Avvisi <span class="badge bg-dark">2</span>
+                </button>
+                <button type="button" class="btn btn-success">
+                    Completati <span class="badge bg-light text-dark">5</span>
+                </button>
+            </div>
         </div>
 
-        <!-- Paginazione -->
-        <div class="row mt-4">
+        <!-- Sezione Paginazione -->
+        <div class="row mt-5">
             <div class="col-12 d-flex justify-content-center">
-                <nav aria-label="Page navigation">
+                <nav aria-label="Page navigation example">
                     <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">Precedente</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Successivo</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
