@@ -1,78 +1,86 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Esercizio</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        /* Stile personalizzato per le immagini */
-        .img-circle {
-            border-radius: 50%;
-        }
-        .img-rounded {
-            border-radius: 15px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina con Componenti Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Jumbotron -->
-    <div class="bg-info text-white p-5 text-center">
-        <h1 class="display-4">Benvenuti nel nostro Esercizio Bootstrap</h1>
-        <p class="lead">Questo esempio mostra vari componenti di Bootstrap come immagini fluttuanti, jumbotron, alert, e bottoni.</p>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="#">Esercizio BTS_4.1</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-    <!-- Griglia con immagini -->
-    <div class="container my-5">
-        <div class="row">
-            <!-- Immagine fluttuante a destra in un cerchio -->
-            <div class="col-12 col-md-4">
-                <img src="https://via.placeholder.com/150" alt="Immagine 1" class="img-circle float-end" width="150">
-            </div>
-
-            <!-- Immagine centrata in un thumbnail -->
-            <div class="col-12 col-md-4 text-center">
-                <div class="thumbnail">
-                    <img src="https://via.placeholder.com/150" alt="Immagine 2" class="img-fluid" width="150">
-                </div>
-            </div>
-
-            <!-- Immagine fluttuante a sinistra con bordi arrotondati -->
-            <div class="col-12 col-md-4">
-                <img src="https://via.placeholder.com/150" alt="Immagine 3" class="img-rounded float-start" width="150">
-            </div>
-        </div>
+<div class="container">
+  <!-- Card con Badge -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <h5 class="card-title">Card con Badge <span class="badge bg-primary">New</span></h5>
+      <p class="card-text">Questa è una card che mostra l'uso di un badge per evidenziare un'informazione importante.</p>
+      <a href="#" class="btn btn-primary">Scopri di più</a>
     </div>
+  </div>
 
-    <!-- Alert con link e effetto fade -->
-    <div class="container my-5">
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <strong>Successo!</strong> Questo è un messaggio di successo con un <a href="#top" class="alert-link">link per tornare su</a>.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+  <!-- List Group -->
+  <div class="list-group mb-4">
+    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Elemento attivo</a>
+    <a href="#" class="list-group-item list-group-item-action">Elemento 2</a>
+    <a href="#" class="list-group-item list-group-item-action">Elemento 3</a>
+    <a href="#" class="list-group-item list-group-item-action">Elemento 4</a>
+  </div>
+
+  <!-- Pagination -->
+  <nav aria-label="Paginazione di esempio">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Precedente</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Successivo</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Collapse -->
+  <div class="mb-4">
+    <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Mostra/Nascondi Contenuto
+    </button>
+    <div class="collapse mt-2" id="collapseExample">
+      <div class="card card-body">
+        Questo è un esempio di contenuto che può essere espanso o compresso usando il componente Collapse di Bootstrap.
+      </div>
     </div>
+  </div>
 
-    <!-- Bottoni con DropDownMenu -->
-    <div class="container my-5">
-        <button class="btn btn-outline-primary btn-block mb-3">Bottone Block Level</button>
+  <!-- Badge come contatore -->
+  <h3>Esempio di Badge come Contatore: <span class="badge bg-secondary">4</span></h3>
 
-        <!-- Dropdown Menu -->
-        <div class="btn-group">
-            <button type="button" class="btn btn-outline-secondary">Menu</button>
-            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Opzione 1</a></li>
-                <li><a class="dropdown-item" href="#">Opzione 2</a></li>
-                <li><a class="dropdown-item" href="#">Opzione 3</a></li>
-            </ul>
-        </div>
-    </div>
+</div>
 
-    <!-- Bootstrap 5 JS e dipendenze -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
