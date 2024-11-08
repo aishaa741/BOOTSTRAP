@@ -11,12 +11,12 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">BTS_4.1</a>
+            <a class="navbar-brand" href="#">Esercizio BTS_4.1</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -31,78 +31,84 @@
         </div>
     </nav>
 
-    <div class="container my-4">
+    <!-- Container principale con layout a griglia -->
+    <div class="container my-5">
         <div class="row">
-            <!-- Colonna Sinistra -->
+            <!-- Colonna sinistra -->
             <div class="col-md-4">
-                <h3>Sezione Badges</h3>
-                <p>
-                    Messaggi <span class="badge bg-primary">5</span>
-                </p>
-                <p>
-                    Notifiche <span class="badge bg-secondary">3</span>
-                </p>
-                <p>
-                    Avvisi <span class="badge bg-danger">1</span>
-                </p>
-
-                <!-- List Group -->
-                <h3 class="mt-4">Lista Attività</h3>
+                <!-- List Group con Badges -->
+                <h3 class="mb-3">Lista Attività</h3>
                 <ul class="list-group">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Task 1
-                        <span class="badge bg-success rounded-pill">Completato</span>
+                        Compito 1
+                        <span class="badge bg-primary rounded-pill">Nuovo</span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Task 2
+                        Compito 2
                         <span class="badge bg-warning rounded-pill">In corso</span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Task 3
-                        <span class="badge bg-danger rounded-pill">In ritardo</span>
+                        Compito 3
+                        <span class="badge bg-success rounded-pill">Completato</span>
                     </li>
                 </ul>
             </div>
 
-            <!-- Colonna Centrale -->
+            <!-- Colonna centrale -->
             <div class="col-md-4">
                 <!-- Card con Collapse -->
-                <h3>Informazioni Importanti</h3>
+                <h3 class="mb-3">Notizie Importanti</h3>
                 <div class="card">
-                    <div class="card-header">
-                        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#infoCollapse" aria-expanded="false" aria-controls="infoCollapse">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span>Notifiche</span>
+                        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseContent" aria-expanded="false" aria-controls="collapseContent">
                             Mostra Dettagli
                         </button>
                     </div>
-                    <div id="infoCollapse" class="collapse">
+                    <div id="collapseContent" class="collapse">
                         <div class="card-body">
-                            Questo è il contenuto della card, che può essere nascosto o mostrato tramite il bottone sopra. Qui puoi inserire dettagli importanti.
+                            Questo è il contenuto della card che può essere nascosto o mostrato usando il bottone sopra. Qui puoi aggiungere dettagli importanti.
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Colonna Destra -->
+            <!-- Colonna destra -->
             <div class="col-md-4">
-                <!-- Paginazione -->
-                <h3>Paginazione</h3>
-                <nav aria-label="Navigazione tra pagine">
+                <!-- Badges -->
+                <h3 class="mb-3">Notifiche con Badge</h3>
+                <button type="button" class="btn btn-primary mb-2">
+                    Messaggi <span class="badge bg-secondary">4</span>
+                </button>
+                <button type="button" class="btn btn-warning mb-2">
+                    Avvisi <span class="badge bg-dark">2</span>
+                </button>
+                <button type="button" class="btn btn-success">
+                    Completati <span class="badge bg-light text-dark">5</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sezione Paginazione -->
+        <div class="row mt-5">
+            <div class="col-12 d-flex justify-content-center">
+                <nav aria-label="Page navigation example">
                     <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">Precedente</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Successivo</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
-
-                <!-- Card per Informazioni aggiuntive -->
-                <h3 class="mt-4">Note aggiuntive</h3>
-                <div class="card">
-                    <div class="card-body">
-                        Qui puoi aggiungere ulteriori informazioni o note utili per l'utente. Può essere una nota breve o un promemoria.
-                    </div>
-                </div>
             </div>
         </div>
     </div>
