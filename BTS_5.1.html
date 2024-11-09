@@ -1,26 +1,39 @@
-:root {
-    --bs-primary: #003366; /* Blu scuro */
-    --bs-success: #228B22; /* Verde foresta */
-    --bs-info: #00CED1; /* Azzurro */
-    --bs-warning: #FFA500; /* Arancione */
-    --bs-danger: #8B0000; /* Rosso scuro */
-    --bs-secondary: #696969; /* Grigio scuro */
-    --bs-dark: #000000; /* Nero */
-    --bs-light: #f8f9fa; /* Bianco */
-}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biscotti della Nonna</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Biscotti della Nonna</a>
+  </nav>
 
-/* Personalizzazioni aggiuntive */
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--bs-light);
-    color: var(--bs-dark);
-}
+  <!-- Hero Section -->
+  <header class="text-center py-5 bg-light">
+    <h1 class="display-4 text-primary">I Biscotti della Nonna</h1>
+    <p class="lead text-secondary">I biscotti più buoni fatti con amore.</p>
+  </header>
 
-h1, h2 {
-    color: var(--bs-primary);
-}
+  <!-- Contenuto -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="immagine_biscotti.jpg" class="img-fluid rounded" alt="Biscotti della nonna">
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-primary">Ricetta Segreta</h2>
+        <p class="text-secondary">Scopri i nostri biscotti, fatti con ingredienti genuini.</p>
+      </div>
+    </div>
+  </section>
 
-footer {
-    background-color: var(--bs-dark);
-    color: var(--bs-light);
-}
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3">
+    <p>© 2024 Biscotti della Nonna</p>
+  </footer>
+</body>
+</html>
